@@ -1,5 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany, PrimaryColumn } from "typeorm"
-import { Message } from "./message"
+import { Entity, Column, PrimaryColumn } from "typeorm"
 
 @Entity("User")
 export class User {
