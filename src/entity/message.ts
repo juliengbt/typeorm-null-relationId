@@ -6,7 +6,7 @@ export class Message {
   @PrimaryColumn({ type: 'varbinary', length: 16 })
     id!: Buffer
 
-  @ManyToOne(() => User, (user) => user.id, { cascade: ['insert'], nullable: false, onDelete: "CASCADE" })
+  @ManyToOne(() => User, (user) => user.id, { nullable: false, })
   @JoinColumn({ referencedColumnName: "id" })
   sender!: User
 
